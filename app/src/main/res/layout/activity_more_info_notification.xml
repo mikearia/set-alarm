@@ -13,6 +13,17 @@
         android:id="@+id/textview_info"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Info on the notification"
-        android:textSize="18sp"/>
+        android:text="Wake Up!!!"
+        android:textColor="@color/red"
+        android:textSize="30sp"
+        android:layout_centerHorizontal="true"/>
+
+    <ImageView
+        android:id="@+id/imgview_info"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/person"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"/>
+
 </RelativeLayout>

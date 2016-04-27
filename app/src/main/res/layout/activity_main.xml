@@ -9,31 +9,23 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="com.codelabs.alarm.MainActivity">
 
-    <Button
-        android:id="@+id/button_show"
+    <TimePicker
+        android:id="@+id/timePicker"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="SHOW NOTIFICATION"
-        android:textSize="15sp"
-        android:onClick="showNotification"/>
+        android:layout_alignParentStart="true"
+        android:layout_centerHorizontal="true"
+        android:clickable="true" />
 
-    <Button
-        android:id="@+id/button_stop"
-        android:layout_width="match_parent"
+    <Switch
+        android:id="@+id/switch_turnalarm"
+        android:layout_width="150dp"
         android:layout_height="wrap_content"
-        android:text="STOP NOTIFICATION"
+        android:textAlignment="center"
         android:textSize="15sp"
-        android:onClick="stopNotification"
-        android:layout_below="@id/button_show"
-        android:layout_marginTop="10dp"
-        android:layout_marginBottom="10dp"/>
+        android:text="Turn Alarm On"
+        android:textColor="@color/black"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/timePicker" />
 
-    <Button
-        android:id="@+id/button_alert"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="ALERT IN 5 SECONDS"
-        android:textSize="15sp"
-        android:onClick="setAlarm"
-        android:layout_below="@id/button_stop"/>
 </RelativeLayout>
